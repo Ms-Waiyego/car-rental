@@ -2,6 +2,12 @@
 <html lang="en">
 <head>
       <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <style>
+         .carousel-item img {
+      height: 500px;
+      object-fit: cover;
+    }
+    </style>
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -45,6 +51,39 @@
   </div>
 </nav>
 <body>
+<!-- Carousel -->
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="assets/images/pexels-negativespace-97079.jpg" class="d-block w-100" height="300" alt="Car Rental 1">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Our Fleet of Cars</h5>
+                    <p>Choose from a variety of cars for your needs</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="assets/images/pexels-mcraftpix-21014.jpg" class="d-block w-100" height="300"  alt="Car Rental 2">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Best Rental Rates</h5>
+                    <p>Affordable prices for luxury and economy vehicles</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="assets/images/pexels-tdcat-70912.jpg" class="d-block w-100" height="300" alt="Car Rental 3">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Reliable Safari Transport</h5>
+                    <p>We provide safari vehicles for your wild adventures</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
 <script src="assets/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

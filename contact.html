@@ -3,6 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <style>
+         .carousel-item img {
+      height: 500px;
+      object-fit: cover;
+    }
+    </style>
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -46,6 +52,72 @@
   </div>
 </nav>
 <body>
+<!-- Carousel -->
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="assets/images/pexels-pixabay-207456.jpg" class="d-block w-100" height="300" alt="Car Rental 1">
+            </div>
+        </div>
+    <!-- Contact Us Header -->
+    <div class="container-fluid bg-primary-subtle text-white py-5 text-center">
+        <h1 class="display-5">Contact Us</h1>
+        <p>We're here to assist you with your car rental needs</p>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="container py-5">
+        <div class="row g-5">
+            <!-- Contact Form -->
+            <div class="col-lg-6">
+                <h4 class="mb-4">Send Us a Message</h4>
+                <form>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Your Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email Address</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="subject" class="form-label">Subject</label>
+                        <input type="text" class="form-control" id="subject" placeholder="Subject" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" id="message" rows="5" placeholder="Enter your message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                </form>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="col-lg-6">
+                <h4 class="mb-4">Get In Touch</h4>
+                <p class="mb-3">Feel free to reach out to us for any inquiries or concerns. We offer car rental services including self-drive, chauffeuring, and safari transport.</p>
+                <ul class="list-unstyled">
+                    <li class="mb-3"><strong>Location:</strong> Nairobi, Kenya</li>
+                    <li class="mb-3"><strong>Phone:</strong> +254 712 345 678</li>
+                    <li class="mb-3"><strong>Email:</strong> info@carrentals.com</li>
+                    <li class="mb-3"><strong>Business Hours:</strong> Mon-Sun, 8 AM - 8 PM</li>
+                </ul>
+
+                <!-- Google Maps Embed -->
+                <div class="ratio ratio-16x9">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3997.7895128900495!2d36.82194661427757!3d-1.2920655990639717!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f10d3e224e471%3A0x422f7c86e84d4f7a!2sNairobi%2C%20Kenya!5e0!3m2!1sen!2ske!4v1614191448789!5m2!1sen!2ske"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p class="mb-0">© 2024 Car Rentals | All rights reserved</p>
+    </footer>
+
 
 <script src="assets/js/bootstrap.bundle.min.js"></script>
 </body>
