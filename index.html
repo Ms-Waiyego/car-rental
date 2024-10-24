@@ -6,12 +6,29 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <title>Car Booking Website</title>
+  <style>
+    .carousel-item img {
+      height: 500px; /* Set the maximum height */
+      object-fit: cover; /* Ensure the image covers the area without distortion */
+      padding: 10px;
+    }
+    .carousel-caption {
+      position: absolute; /* Position the caption absolutely */
+      bottom: 20px; /* Adjust position from the bottom */
+      left: 50%; /* Center horizontally */
+      transform: translateX(-50%); /* Center text */
+      color: white; /* Text color */
+      background: rgba(0, 0, 0, 0.5); /* Background with transparency */
+      padding: 10px; /* Padding around text */
+      border-radius: 5px; /* Rounded corners */
+    }
+  </style>
+    <title>Car Rental Services</title>
 </head>
 <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark-subtle">
   <div class="container-fluid">
       <a class="navbar-brand" href="#">
-      <img src="assets/images/logo.png" alt="Logo" width="200px" height="150px" class="d-inline-block align-text-center">
+      <img src="assets/images/logo.png" alt="Logo" width="230px" height="130px" class="d-inline-block align-text-center">
     </a>
     <a class="navbar-brand" href="#">Ka-Rental</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -57,6 +74,64 @@
   </div>
 </nav>
 <body class="bg-info-subtle">
+<!--Caurosel-->
+<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active ">
+      <img src="assets/images/pexels-pixabay-164634.jpg" class="d-block w-100 img-fluid rounded" alt="...">
+      <div class="carousel-caption">
+          <h5>Chauffeuring Services</h5>
+          <p>Relax in comfort as our professional chauffeurs take you wherever you need to go. Perfect for special occasions and business trips!</p>
+        </div>
+    </div>
+    <div class="carousel-item">
+      <img src="assets/images/pexels-mcraftpix-21014.jpg" class="d-block w-100 img-fluid rounded" alt="...">
+      <div class="carousel-caption">
+          <h5>Chauffeuring Services</h5>
+          <p>Relax in comfort as our professional chauffeurs take you wherever you need to go. Perfect for special occasions and business trips!</p>
+        </div>
+    </div>
+    <div class="carousel-item">
+      <img src="assets/images/pexels-tdcat-70912.jpg" class="d-block w-100 img-fluid rounded" alt="...">
+      <div class="carousel-caption">
+          <h5>Chauffeuring Services</h5>
+          <p>Relax in comfort as our professional chauffeurs take you wherever you need to go. Perfect for special occasions and business trips!</p>
+        </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<div class="container mt-3">
+    <div class="row h-100 align-items-stretch">
+      <!-- Image Column -->
+      <div class="col-md-4 d-flex align-items-stretch">
+        <img src="assets/images/pexels-negativespace-97079.jpg" class="img-fluid rounded ms-1 h-100" alt="Car Rental Service">
+      </div>
+
+      <!-- Text Column -->
+      <div class="col-md-8 d-flex align-items-stretch">
+        <div class="d-flex flex-column justify-content-center">
+          <h2>Reliable Car Rental Services in Nairobi</h2>
+          <p>
+            At Ka-Rental, we offer a range of reliable and affordable car rental options, tailored to suit your needs. Whether you’re looking for self-drive, chauffeuring, or safari transport, we have the perfect vehicle for you.
+            Self-Drive: Choose from our fleet of vehicles, including the Mazda CX-5, Toyota Premio, and Toyota Vitz—ideal for city and long-distance trips.
+            Chauffeuring Services: Relax while our professional drivers take care of your transportation, perfect for corporate events or special occasions.
+            Safari Transport: Explore Kenya's wildlife in style with our Toyota Prado and specially equipped Safari Vans.
+            Airport Transfers: Convenient, on-time pickups and drop-offs with vehicles like the Toyota Noah and Mazda CX-5.
+            With flexible rental terms and top-notch customer service, we're here to make your journey smooth and enjoyable. Book your ride today and travel Kenya with ease!
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
 <script src="assets/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
