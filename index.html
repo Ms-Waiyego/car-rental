@@ -59,68 +59,86 @@
   </div>
 </nav>
 <body class="bg-info-subtle">
-<!--Caurosel-->
-<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active ">
-      <img src="assets/images/pexels-pixabay-164634.jpg" class="d-block w-100 img-fluid rounded" alt="...">
-          <div class="carousel-caption text-start">
-                <h3 class="text-white">MAKE YOUR RESERVATION</h3>
-                <form>
-                    <div class="mb-3">
-                        <select class="form-select" aria-label="Select Your Car Type">
-                            <option selected>Select Your Car Type</option>
-                            <option value="1">Mazda CX-5</option>
-                            <option value="2">Premio</option>
-                            <option value="3">Vits</option>
-                            <option value="4">Noah</option>
-                            <option value="5">Prado</option>
-                        </select>
-                    </div>
-                    <div class="mb-3">
-                        <input type="text" class="form-control" placeholder="Pick Up Location" required>
-                    </div>
-                    <div class="mb-3">
-                        <input type="text" class="form-control" placeholder="Drop Off Location" required>
-                    </div>
-                    <div class="mb-3">
-                        <input type="date" class="form-control" required>
-                        <input type="time" class="form-control mt-2" placeholder="Pick Up Time" required>
-                    </div>
-                    <div class="mb-3">
-                        <input type="date" class="form-control" required>
-                        <input type="time" class="form-control mt-2" placeholder="Drop Off Time" required>
-                    </div>
-                    <button type="submit" class="btn btn-light bg-info">Book Now</button>
-                </form>
+  <!-- Carousel -->
+  <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="assets/images/pexels-pixabay-164634.jpg" class="d-block w-100 img-fluid rounded" alt="...">
+           <div class="carousel-caption d-none d-md-block">
+                    <h5>The best Self-Drive car</h5>
+                    <p>We offer a wide variety of cars that you can choose from.</p>
+           </div>
+      </div>
+        <div class="carousel-item">
+                <img src="assets/images/pexels-mcraftpix-21014.jpg" class="d-block w-100" height="300"  alt="Car Rental 2">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Best Rental Rates</h5>
+                    <p>Affordable prices for luxury and economy vehicles</p>
+                </div>
             </div>
-        </div>
-  </div>
-</div>
-<div class="container mt-3">
-    <div class="row h-100 align-items-stretch">
-      <!-- Image Column -->
-      <div class="col-md-4 d-flex align-items-stretch">
-        <img src="assets/images/pexels-negativespace-97079.jpg" class="img-fluid rounded ms-1 h-100" alt="Car Rental Service">
+            <div class="carousel-item">
+                <img src="assets/images/pexels-tdcat-70912.jpg" class="d-block w-100" height="300" alt="Car Rental 3">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Reliable Safari Transport</h5>
+                    <p>We provide safari vehicles for your wild adventures</p>
+                </div>
+            </div>
+    </div>
+    </div>
+
+  <!-- Booking Form and Service Description -->
+  <div class="container mt-5">
+    <div class="row">
+      <!-- Booking Form Column -->
+      <div class="col-md-4 bg-dark p-4 rounded">
+        <h3 class="text-white">MAKE YOUR RESERVATION</h3>
+        <form>
+          <div class="mb-3">
+            <select class="form-select" aria-label="Select Your Car Type">
+              <option selected>Select Your Car Type</option>
+              <option value="1">Mazda CX-5</option>
+              <option value="2">Premio</option>
+              <option value="3">Vits</option>
+              <option value="4">Noah</option>
+              <option value="5">Prado</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <input type="text" class="form-control" placeholder="Pick Up Location" required>
+          </div>
+          <div class="mb-3">
+            <input type="text" class="form-control" placeholder="Drop Off Location" required>
+          </div>
+          <div class="mb-3">
+            <input type="date" class="form-control" required>
+            <input type="time" class="form-control mt-2" placeholder="Pick Up Time" required>
+          </div>
+          <div class="mb-3">
+            <input type="date" class="form-control" required>
+            <input type="time" class="form-control mt-2" placeholder="Drop Off Time" required>
+          </div>
+          <button type="submit" class="btn btn-info text-white w-100">Book Now</button>
+        </form>
       </div>
 
       <!-- Text Column -->
-      <div class="col-md-8 d-flex align-items-stretch">
-        <div class="d-flex flex-column justify-content-center">
-          <h2>Reliable Car Rental Services in Nairobi</h2>
+      <div class="col-md-8 d-flex align-items-center">
+        <div>
+          <h2 class="mb-4">Reliable Car Rental Services in Nairobi</h2>
           <p>
             At Ka-Rental, we offer a range of reliable and affordable car rental options, tailored to suit your needs. Whether you’re looking for self-drive, chauffeuring, or safari transport, we have the perfect vehicle for you.
-            Self-Drive: Choose from our fleet of vehicles, including the Mazda CX-5, Toyota Premio, and Toyota Vitz—ideal for city and long-distance trips.
-            Chauffeuring Services: Relax while our professional drivers take care of your transportation, perfect for corporate events or special occasions.
-            Safari Transport: Explore Kenya's wildlife in style with our Toyota Prado and specially equipped Safari Vans.
-            Airport Transfers: Convenient, on-time pickups and drop-offs with vehicles like the Toyota Noah and Mazda CX-5.
-            With flexible rental terms and top-notch customer service, we're here to make your journey smooth and enjoyable. Book your ride today and travel Kenya with ease!
           </p>
+          <ul>
+            <li><strong>Self-Drive:</strong> Choose from our fleet, including the Mazda CX-5, Toyota Premio, and Toyota Vitz—ideal for city and long-distance trips.</li>
+            <li><strong>Chauffeuring Services:</strong> Relax while our professional drivers handle your transportation, perfect for corporate events or special occasions.</li>
+            <li><strong>Safari Transport:</strong> Explore Kenya's wildlife in style with our Toyota Prado and specially equipped Safari Vans.</li>
+            <li><strong>Airport Transfers:</strong> Enjoy on-time pickups and drop-offs with vehicles like the Toyota Noah and Mazda CX-5.</li>
+            <li>With flexible rental terms and top-notch customer service, we're here to make your journey smooth and enjoyable. Book your ride today and travel Kenya with ease!</li>
+          </ul>
         </div>
       </div>
     </div>
   </div>
-
 <script src="assets/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
